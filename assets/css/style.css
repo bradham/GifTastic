@@ -12,4 +12,21 @@ input {
 
 #label-form {
   display:block;
+  font-weight: bold;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
+#giphs-view {
+    width: 75%;
+}
+
+#topic-form {
+    width: 25%;
 }

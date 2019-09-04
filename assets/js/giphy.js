@@ -9,7 +9,7 @@ input to add to array
 button submit to add to array
  */
 
-var topics = ["Boba Fett", "Luke", "Chewbacca", "Rey", "speeder"];
+var topics = ["Boba Fett", "Luke", "Chewbacca", "Rey", "speeder", "Han Solo", "Darth Vader", "Anakin", "Yoda"];
 
 
 function renderButtons() {
