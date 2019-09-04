@@ -109,7 +109,9 @@ function displayTopicInfo() {
                       $("#giphs-view").prepend(giph);
              */
             //$("#giphs-view").text(JSON.stringify(response));
-            console.log(response.data[i]);
+            
+            //For debugging API object
+            //console.log(response.data[i]);
         }
     });
 }
@@ -156,6 +158,21 @@ $(document).on("click", ".giph", function() {
     // STEP FOUR: open the file in the browser and click on the images.
     // Then click again to pause.
   });
+
+  $("#add-topic").on("click", function(event) {
+    event.preventDefault();
+
+    // This line grabs the input from the textbox
+    var newTopic = $("#topic-input").val().trim();
+
+    // Adding the topic from the textbox to the buttons array
+    topics.push(newTopic);
+    console.log(topics);
+
+    // Calling renderButtons which handles the processing of our movie array
+    renderButtons();
+  });
+
 
 
 renderButtons();

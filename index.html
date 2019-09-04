@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>GifTastic! Giphy Finder!</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    </head>
-    <body>
-        <!-- Put buttons here -->
-        <div id="buttons-list"></div>
+<head>
+    <meta charset="utf-8">
+    <title>GifTastic! Giphy Finder!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- Giphs will Get Put Here -->
-        <div id="giphs-view"></div>
+</head>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
-        <script src="assets/js/giphy.js" async defer></script>
-    </body>
+<body>
+    <!-- Put buttons here -->
+    <div id="buttons-list"></div>
+
+    <form id="topic-form" class="float-right">
+        <label for="topic-input" id="label-form">Add a Star Wars button!</label>
+        <input type="text" id="topic-input"><br>
+
+        <!-- Button triggers new topic button to be added -->
+        <input id="add-topic" type="submit" value="Add a Button">
+    </form>
+
+
+    <!-- Giphs will Get Put Here -->
+    <div id="giphs-view"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="assets/js/giphy.js" async defer></script>
+</body>
+
 </html>

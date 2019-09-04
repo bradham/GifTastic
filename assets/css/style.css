@@ -4,3 +4,7 @@ form,
 input {
   margin: 10px;
 }
+
+#label-form {
+  display:block;
+}
