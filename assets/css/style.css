@@ -1,8 +1,13 @@
+
+body {
+    background-color: #778899;
+}
+
 button,
 div,
 form,
 input {
-  margin: 10px;
+  margin: 8px;
 }
 
 #label-form {
