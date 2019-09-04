@@ -38,6 +38,8 @@ function renderButtons() {
 //TO DO: overwrite/refresh results displayed after button is clicked
 function displayTopicInfo() {
 
+    $("#giphs-view").empty();
+
     var topic = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?apikey=Ab6N6BpDEAK7ZXDlD0R2FwxpnJeZFKOK&q=starwars+" + topic + "&limit=10";
 
@@ -54,7 +56,9 @@ function displayTopicInfo() {
         for (var i = 0; i < results.length; i++) {
 
             // Only taking action if the photo has an appropriate rating
-            if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+            // Removed rating so that 10 items display. If rating is added then
+            // a counter should be created to produce 10 items
+            //if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
                 // Creating a div for the gif
                 var gifDiv = $("<div>");
 
@@ -80,7 +84,8 @@ function displayTopicInfo() {
 
                 // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
                 $("#giphs-view").prepend(gifDiv);
-            }
+            
+            //End of if rating statement  }
 
 
             /*           // Saving the image_original_url property
