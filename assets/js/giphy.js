@@ -1,5 +1,5 @@
 //Array for all buttons
-var topics = ["Boba Fett", "Luke", "Chewbacca", "Rey", "speeder", "Han Solo", "Darth Vader", "Anakin", "Yoda"];
+var topics = ["Boba Fett", "Luke", "Chewbacca", "Rey", "speeder", "Han Solo", "Darth Vader", "Anakin", "Yoda", "Jar Jar"];
 
 
 function renderButtons() {
